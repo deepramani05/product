@@ -11,13 +11,13 @@ let output = (product) => {
         title.innerHTML=ele.title
 
         let price = document.createElement("h2")
-        price.innerHTML=ele.price*5
+        price.innerHTML=`Price = ${ele.price*5}`
 
         let rating = document.createElement("h3")
-        rating.innerHTML=ele.rating
+        rating.innerHTML=`Rating = ${ele.rating}`
 
         let discount = document.createElement("h3")
-        discount.innerHTML=ele.discountPercentage
+        discount.innerHTML=`Discount = ${ele.discountPercentage}`
 
         let btn = document.createElement("button")
         btn.innerHTML="Add To Cart"
@@ -28,6 +28,26 @@ let output = (product) => {
         div.append(img,title,price,rating,discount,btn,btn2)
 
         document.getElementById("product").append(div)
+
+        btn.addEventListener("click", () => {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let exists = false;
+            // checking for existing cart
+            cart.map((item, pro) => {
+              if (item.id == ele.id) {
+                cart[pro].qty += 1;
+                exists = true;
+              }
+            });
+        
+            if (!exists) {
+              cart.push({ ...ele, qty: 1 });
+        
+              alert("added to cart");
+            }
+        
+            localStorage.setItem("cart", JSON.stringify(cart));
+          });
 
     })
 }
