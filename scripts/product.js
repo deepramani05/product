@@ -11,7 +11,7 @@ let output = (product) => {
         title.innerHTML=ele.title
 
         let price = document.createElement("h2")
-        price.innerHTML=ele.price
+        price.innerHTML=ele.price*5
 
         let rating = document.createElement("h3")
         rating.innerHTML=ele.rating
@@ -19,7 +19,13 @@ let output = (product) => {
         let discount = document.createElement("h3")
         discount.innerHTML=ele.discountPercentage
 
-        div.append(img,title,price,rating,discount)
+        let btn = document.createElement("button")
+        btn.innerHTML="Add To Cart"
+
+        let btn2 = document.createElement("button")
+        btn2.innerHTML="Buy Now"
+
+        div.append(img,title,price,rating,discount,btn,btn2)
 
         document.getElementById("product").append(div)
 
