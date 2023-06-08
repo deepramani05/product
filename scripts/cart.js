@@ -103,7 +103,7 @@ let product = (data) => {
           pmain.setAttribute("id","price")
 
               let price = document.createElement("h1")
-              price.innerHTML=ele.price * 10
+              price.innerHTML=ele.price
               
           pmain.append(price)
 
