@@ -71,7 +71,7 @@ let product = (data) => {
 
                   let sdiv2 = document.createElement("div")
 
-                      let a2 = document.createElement("a")
+                      let a2 = document.createElement("p")
                       a2.innerHTML=ele.qty
 
                   sdiv2.append(a2)
