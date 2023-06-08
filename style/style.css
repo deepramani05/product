@@ -35,3 +35,108 @@ img {
     height: 100%;
     
 }
+
+
+
+
+
+
+
+/* cart page */
+
+
+
+#title h1 {
+    margin: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid slategrey;
+    width: fit-content;
+}
+
+#img {
+    width: 50%;
+}
+
+#img img {
+    width: 300px;
+}
+
+#ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border-bottom: 3px solid rgba(112, 128, 144, 0.381);
+    padding-bottom: 20px;
+}
+
+#li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+#data{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div#image-div {
+    width: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#price-div{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+#li-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: 20px;
+}
+
+#li-1 {
+    width: 60%;
+}
+
+#qty {
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.472);
+    height: fit-content;
+}
+
+#qty a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+#qty div {
+    padding: 10px 15px;
+}
+
+#qty div:hover {
+    background-color: slategrey;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+#name {
+    margin-left: 20px;
+    width: 40%;
+}
+
+#price {
+    width: 25%;
+}

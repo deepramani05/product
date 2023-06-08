@@ -48,12 +48,40 @@
             color: white;
         }
 
+        #lth {
+            color: black;
+            text-transform: capitalize; 
+            font-size: 25px; 
+            text-decoration: none;
+        }
+
+        #htl{
+            color: black;
+            text-transform: capitalize; 
+            font-size: 25px; 
+            text-decoration: none;
+        }
+
+        #htl:hover{
+            color: darkslategrey;
+            border-bottom: 3px solid slategrey;
+            padding-bottom: 5px;
+            transition: all 0.1s ease-in-out 0s;
+        }
+
+        #lth:hover{
+            color: darkslategrey;
+            border-bottom: 3px solid slategrey;
+            padding-bottom: 5px;
+            transition: all 0.1s ease-in-out 0s;
+        }
+
     </style>
 </head>
 
 <body>
     <div>
-        <div id="nav">
+        <div id="nav" style="position: sticky; top: 0;">
             <ul class="ul">
                 <li class="li">
                     <a href="../index.html">
@@ -82,8 +110,18 @@
                 </li>
             </ul>
         </div>
-        <div id="div">
-            <div id="product">
+        <div id="div" style="display: flex;">
+            <div id="sidebar" style="width: 10%;  border-right: 5px solid rgba(0, 0, 0, 0.35);">
+                <div id="sidebar-sub" style="position: fixed;">
+                    <h1>
+                        <a href="" id="lth">Low To High</a>
+                    </h1>
+                    <h1>
+                        <a href="" id="htl">High To Low</a>
+                    </h1>
+                </div>
+            </div>
+            <div id="product" style="width: 90%;">
 
             </div>
         </div>
